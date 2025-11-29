@@ -75,6 +75,10 @@ def _row_to_post_with_comments(row) -> PostOut:
     )
 
 # ---- routes ----
+@app.get("/")
+def read_root():
+    return {"status": "ok", "message": "API is running. Access /docs for documentation."}
+    
 @app.get("/health")
 def health():
     return {"ok": True}
@@ -202,3 +206,4 @@ def add_comment(payload: CommentIn):
     except Exception:
         logger.exception("POST /comments failed")
         raise HTTPException(500, "internal_error")
+
