@@ -1,0 +1,32 @@
+{
+  "name": "work",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@iconify/react": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.14",
+    "@tanstack/react-query": "^5.90.5",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "@vitejs/plugin-react": "^5.0.4",
+    "antd": "^5.27.6",
+    "axios": "^1.12.2",
+    "daisyui": "^5.1.29",
+    "firebase": "^12.6.0",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^6.30.1",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "vite": "^7.1.9"
+  }
+}
