@@ -75,6 +75,10 @@ def _row_to_post_with_comments(row) -> PostOut:
     )
 
 # ---- routes ----
+@app.get("/")
+def read_root():
+    return {"status": "ok", "message": "API is running. Access /docs for documentation."}
+
 @app.get("/health")
 def health():
     return {"ok": True}
