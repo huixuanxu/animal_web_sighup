@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Optional, List
 from uuid import uuid4
 import os, logging
+from fastapi.middleware.cors import CORSMiddleware  # ← 新增這行
 
 # ---- logging ----
 logging.basicConfig(level=logging.INFO)
